@@ -8,7 +8,7 @@ echo "================================"
 echo ""
 echo "[1/3] TLS 인증서 생성 중..."
 openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes \
-    -subj "/CN=localhost" 2>/dev/null
+    -subj "/CN=localhost"
 
 if [ -f cert.pem ] && [ -f key.pem ]; then
     echo "[완료] 인증서 생성 완료: cert.pem, key.pem"

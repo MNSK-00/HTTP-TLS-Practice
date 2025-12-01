@@ -1,5 +1,6 @@
 # 공식 Python 이미지 사용
 # Debian Linux 기반 이미지이며 경량 버전임
+# 해당 이미지에는 HTTP 서버가 내장되어있음
 FROM python:3.14-slim
 
 # 디렉토리 설정
